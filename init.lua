@@ -278,13 +278,13 @@ local config = {
             -- ensure_installed = { "lua" },
             rainbow = {
                 colors = {
-                    "#39bae6",
-                    "#ffb454",
-                    "#aad94c",
                     "#f07178",
                     "#d2a6ff",
                     "#95e6cb",
                     "#f29668",
+                    "#aad94c",
+                    "#39bae6",
+                    "#ffb454",
                 }
             },
         },
