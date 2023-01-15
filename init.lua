@@ -178,7 +178,8 @@ local config = {
         -- easily add or disable built in mappings added during LSP attaching
         mappings = {
             n = {
-                -- ["<leader>lf"] = false -- disable formatting keymap
+                ["<leader><leader>rc"] = { ":AstroReload<cr>", desc = "Reloads config" },
+                ["<leader><leader>f"] = { ":Format<cr>", desc = "Format file" },
             },
         },
         -- add to the global LSP on_attach function
@@ -275,6 +276,17 @@ local config = {
         end,
         treesitter = { -- overrides `require("treesitter").setup(...)`
             -- ensure_installed = { "lua" },
+            rainbow = {
+                colors = {
+                    "#39bae6",
+                    "#ffb454",
+                    "#aad94c",
+                    "#f07178",
+                    "#d2a6ff",
+                    "#95e6cb",
+                    "#f29668",
+                }
+            },
         },
         -- use mason-lspconfig to configure LSP installations
         ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
